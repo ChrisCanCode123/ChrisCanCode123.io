@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #24252A;
+	
+}
+div {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+}
+li, a, button, img {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: #edf0f1;
+  background-color: #17171a;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #17171a;
+}
+.logo {
+ cursor: pointer;
+ width: 10%;
+ height:auto;
+}
+.nav_links{
+  list-style: none;
+  display: inline-block;
+}
+.nav_links li {
+  display: inline-block;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  padding: 10px 10px;
+}
+.nav_links li a:hover{
+  color:#0088a9;
+  padding: 0p 18px;
+  text-decoration: underline;
+}
+button {
+  transition: all 0.3s ease 0s;
+  background-color: rgba(0,136,169,1);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 9px 25px;
+}
+button:hover {
+  background-color: rgba(0,13,69,1);
+}
+.MainImgHolder {
+	padding: 10px;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainImg{
+	width: 80vh;
+}
+.ImgHeader {
+	font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+	font-size: 32px;
+  
+	display: flex;
+  justify-content: center;
+	text-decoration: underline;  
+	color:white;
+	padding: 10px 0px;
+}
+.GmailImg {
+	width: 10vh;
+}
+.GmailImgHolder {
+	padding: 10px;
+	width: 100vw;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.GameImgWrapper{
+  width:10vw;
+  height:10vw;
+  margin: 10px 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  position: relative;
+}
+
+
+img{
+  max-width:100%;
+  max-height:100%;
+  width: auto;
+}
+.Games{
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.GameImgWrapper .GameNameTag {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  opacity: 0;
+  background: none;
+  transition: all 250ms;
+  font-size: clamp(10px,1vw,30px);
+  font-weight: 1000;
+  color: black;
+}
+.GameNameTag:hover .GameImgWrapper {
+  filter: brightness(.4);
+}
+.GameImgWrapper .GameNameTag:hover {
+  opacity: 1;
+}
+.GameImg {
+  filter: brightness(1);
+}
+.GameImg:hover{
+  filter: brightness(.4);
+}
+
